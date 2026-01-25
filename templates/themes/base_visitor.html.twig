@@ -3,7 +3,7 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>{% block title %}{% endblock %} - Blog de Jean Dupont</title>
+            <title>{% block title %}{% endblock %} - Blog santé de Jean Dupont</title>
 
 
             {# SEO #}
@@ -41,7 +41,7 @@
 
 
         </head>
-        <body class = 'bg-primary'>
+        <body class = 'bg-primary body-visitor'>
 
         {# Naxbar #}
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -79,9 +79,13 @@
 
         {# Main #}
 
+        {% block main %}{% endblock %}
+
         {# Footer #}
 
-        <h1>Hello World!</h1>
+        <footer class='text-center'>
+            <p>DWWWM22</p>
+        </footer>
             
         </body>
 </html>
